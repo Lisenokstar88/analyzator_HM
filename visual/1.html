@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--!Подтягиваем таблицу стилей css!-->
+<link rel="stylesheet" href="style.css">
+<!--!Кодировка!-->
+<meta charset="utf-8">
+<!--!Заголовок!-->
+<title>H&M(Handy Maker)</title>
+</head>
+
+<body>
+<!--!Создание таблицы для интерфейса!-->
+  <table id="data-table" border="0" width="100%" >        
+    <tbody>
+      <!--!Создание строки!-->
+        <tr>
+          <!--!Создание столбца!-->
+            <td>
+              <!--!Объявляем форму для обработки запроса!-->
+              <div class="d1">
+                <form>
+                  <!--!Создание поля для ввода!-->
+                <input type="text" placeholder="Искать здесь...">
+                <!--!Создание кнопки для обработки запроса!-->
+                <a class="button" href="2.html" target="_blank"></a>
+                </form>
+              </div>
+            </td>
+            <td>
+              <!--!Создаем форму для загрузки файла с темами!-->
+              <form>
+              <p>Загрузите темы:</p>
+              <!--!Поле для выбора файла!-->
+              <p>
+                <input name="file" type="file">
+              </p>
+              <!--!Кнопка для обработки запроса!-->
+                <p>
+                <button formaction="formdata.php" formmethod="post" formenctype="multipart/form-data" href="">Отправить</button>
+              </p>
+            </form>
+            </td>
+            <td>
+              <!--!Создаем форму для загрузки проверочного файла!-->
+              <form>
+              <p>Загрузите файл запроса:</p>
+                <!--!Поле для выбора файла!-->
+              <p>
+                <input name="file" type="file">
+              </p>
+              <!--!Кнопка для обработки запроса!-->
+              <p>
+                <button formaction="formdata.php" formmethod="post" formenctype="multipart/form-data" href="">Отправить</button>
+              </p>
+            </form>
+            </td>
+        </tr>
+     </tbody>
+</table>
+<!--!Кнопка для скачивания результатов запроса!-->
+<form method="get" action=".xls">
+  <button class="custom-btn btn-2" type="submit" href="">Скачать</button>
+</form>
+<!--!Здесь может быть ваше реклама(за отдельную плату)!-->
+</body>
+</html>
