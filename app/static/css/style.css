@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, Verdana,  sans-serif; /* Семейство шрифтов */
+  font-size: 11pt; /* Размер основного шрифта в пунктах  */
+  background-color: #f0f0f0; /* Цвет фона веб-страницы */
+  color: black; /* Цвет основного текста */ 
+}
+h1 {
+  color: #a52a2a; /* Цвет заголовка */
+  font-size: 24pt; /* Размер шрифта в пунктах */
+  font-family: Georgia, Times, serif; /* Семейство шрифтов */
+  font-weight: normal; /* Нормальное начертание текста  */
+}
+p {
+  text-align: justify; /* Выравнивание по ширине */
+  margin-left: 60px; /* Отступ слева в пикселах */
+  margin-right: 10px; /* Отступ справа в пикселах */
+  border-left: 1px solid #999; /* Параметры линии слева */
+  border-bottom: 1px solid #999; /* Параметры линии снизу */
+  padding-left: 10px; /* Отступ от линии слева до текста  */
+  padding-bottom: 10px; /* Отступ от линии снизу до текста  */
+}
+* {box-sizing: border-box;} /* Размер бокса */
+body{margin: 0;} /* Величина отступа */
+div {padding: 60px 0} /* Внутренний отступ от того элемента в котором он находится */
+form {
+  position: relative; /* Позиция формы */
+  width: 300px; /* Ширина в пикселях */
+  margin: 0 auto; /* Отступ автоматический */
+}
+.d1 {background: #A3D0C3;} /* Цвет заднего фона */
+.d1 input {
+  width: 100%; /* Ширина в процентах */
+  height: 42px; /* Высота в пикселях */
+  padding-left: 10px; /* Отступ слева в пикселях */
+  border: 2px solid #7BA7AB; /* Рамка элемента */
+  border-radius: 5px; /* Скругление элемента */
+  outline: none; /* Дополнительная рамка вокруг элемента - отсутствует */
+  background: #F9F0DA; /* Цвет заднего фона */
+  color: #9E9C9C; /* Цвет текста */
+}
+.d1 button {
+  position: absolute; /* Расположение элемента */
+  top: 0; /* Направление смещения позиционированного элемента относительно вверха*/
+  right: 0px; /* Направление смещения позиционированного элемента относительно права*/
+  width: 42px; /* Ширина элемента */
+  height: 42px; /* Высота элемента */
+  border: none; /* Рамка элемента */
+  background: #7BA7AB; /* Цвет заднего фона*/
+  border-radius: 0 5px 5px 0; /* Скос */
+  cursor: pointer; /* Устанавливает форму курсора */ 
+}
+.d1 button:before {
+  content: "\f002"; /* Свойство заменяет элемент сгенерированным значением */
+  font-family: FontAwesome; /* Тип текста */
+  font-size: 16px; /* Размер текста */
+  color: #F9F0DA; /* Цвет текста */
+}
+table{
+  background: #A3D0C3; /* Цвет заднего фона */
+}
+.custom-btn {
+  width: 120px; /* Ширина элемента */
+  height: 40px; /* Высота элемента */
+  color: #fff; /* Цвет текста */
+  border-radius: 5px; /* Скос */
+  padding: 10px 25px; /* Отступ */
+  font-family: 'Lato', sans-serif; /* Тип текста */
+  font-weight: 500; /* Начертание шрифта */
+  background: transparent; /* Цвет заднего фона */
+  cursor: pointer; /* Устанавливает форму курсора */ 
+  transition: all 0.3s ease; /* Скорость перехода между элементами */
+  position: relative; /* Позиция элемента */ 
+  display: inline-block; /* Тип отображения элемента */
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1); /* Добавление теней */
+  outline: none; /* Дополнительная рамка вокруг элемента - отсутствует */
+}
+.btn-2 {
+  background: rgb(96,9,240); /* Цвет заднего фона */
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%); /* Линейный градиент */
+  border: none; /* Рамка - отсутствует */
+  
+  margin-left:45%; /* Отступ слева */
+  margin-right:45%; /* Отступ справа */
+  display:block; /* тип отображения элемента */
+  margin-top:22%; /* Отступ сверху */
+  margin-bottom:0%; /* Отступ снизу */
+  
+}
+.btn-2:before {
+  height: 0%; /* Высота */
+  width: 2px; /* Ширина */
+}
+.btn-2:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4); /* Добавление теней */
+}
+a.button {
+  position: absolute; /* Позиция элемента */
+  top: 0; /* Отступ от верха */
+  right: 0px; /* Отступ от права */
+  width: 42px; /* Ширина */
+  height: 42px; /* Высота */
+  border: none; /* Указание свойств границ */
+  background: #7BA7AB; /* Цвет заднего фона */
+  border-radius: 0 5px 5px 0; /* Скос */
+  cursor: pointer; /* Устанавливает форму курсора */
+}
+
+div {
+  margin: 24px; /* Отступ */ 
+  text-align: center; /* Положение текста */
+}
