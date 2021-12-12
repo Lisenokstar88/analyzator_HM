@@ -2,7 +2,7 @@
 <html>
 <head>
 <!--!Подтягиваем таблицу стилей css!-->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 <!--!Кодировка!-->
 <meta charset="utf-8">
 <!--!Заголовок!-->
@@ -19,11 +19,14 @@
             <td>
               <!--!Объявляем форму для обработки запроса!-->
               <div class="d1">
-                <form>
+                {%for msg in get_flashed_messages()%}
+                <div> class="flash">{{msg}}</div>
+                {% endfor %}
+                <form action="/query" method="GET">
                   <!--!Создание поля для ввода!-->
-                <input type="text" placeholder="Искать здесь...">
+                <input id='query1' type="text" name= "query_text" value=requied placeholder="Искать здесь...">
                 <!--!Создание кнопки для обработки запроса!-->
-                <a class="button" href="2.html" target="_blank"></a>
+                <input type="submit" class="button" href="2.html" target="_blank"></a>
                 </form>
               </div>
             </td>
